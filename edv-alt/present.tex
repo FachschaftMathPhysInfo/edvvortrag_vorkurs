@@ -1,0 +1,233 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+\input{header}
+
+\begin{document}
+\input{titelei}
+
+\section{Benutzerkennung freischalten}
+\begin{frame}{Benutzerkennung freischalten}
+    \begin{itemize}
+        \item Benutzerkennung wird an den meisten Rechnern und Computersystemen Uni-weit verwendet
+        \item muss freigeschaltet werden
+        \item auf \textcolor{blue}{\href{https://public.urz.uni-heidelberg.de/cgi-bin/wi/freisch.php?funk=2}{www.urz.uni-heidelberg.de $\rightarrow$ Kennung freischalten $\rightarrow$ mit Uni-ID und Aktivierungscode}}
+            gehen und Uni-ID (auf Studiausweis), Aktivierungscode (mit
+            Immatrikulationsunterlagen bekommen) und ein neues
+            Kennwort eingeben
+        \item Passwort kann unter \\
+        {\url{www.urz.uni-heidelberg.de/de/passwort-erneuern}}
+        geändert werden
+        \item Alles zu finden unter\\{\url{https://urz.uni-heidelberg.de}} $\rightarrow$ Service-Katalog
+    \end{itemize}
+\end{frame}
+
+\section{Computer-Pools}
+\begin{frame}{Computer-Pools}
+\fontsize{8}{9.2}\selectfont
+    Mehrere Computer-Pools, die für Mathe und Info zugänglich sind:
+    \begin{itemize}
+        \item in der \textbf{Bibliothek im Mathematikon} (Windows)\\
+            Öffnungszeiten: Montag bis Freitag: 9-21 Uhr, Samstag: 9-15 Uhr\\
+            {\url{https://www.mathinf.uni-heidelberg.de/rechnerpools.html}}
+        \item am \textbf{Universitätsrechenzentrum} (URZ, Windows, Mac):\\
+            Öffnungszeiten: Montag bis Freitag: 8:00-23:45 Uhr, Samstag: 10:00-18:45 Uhr\\
+        \item am \textbf{Kirchhoff-Institut für Physik (INF 227)} (Linux)\\
+            Öffnungszeiten: Montag bis Freitag: 8-19 Uhr\\
+            {\url{https://www.kip.uni-heidelberg.de/cip/cip.html}}
+        \item am \textbf{Physikalisches Institut (INF 226)} (Linux)\\
+            Öffnungszeiten: Montag bis Freitag: 8-19 Uhr\\
+            {\url{https://www.physi.uni-heidelberg.de/Einrichtungen/CIP/}}
+        \item am \textbf{Info-Café der Mensa (INF 304)} (Windows)\\
+            Öffnungszeiten: Montag bis Donnerstag: 9-17 Uhr, Freitag 9-15 Uhr\\
+            {\url{http://stw.uni-heidelberg.de/de/oeffnungszeiten}}
+    \end{itemize}
+\end{frame}
+
+\section{Netzzugang}
+\begin{frame}{Netzzugang}
+    \begin{itemize}
+        \item Benötigt VPN $\Rightarrow$ mehr dazu später
+        \item Netzwerkdosen im URZ (1. Stock), KIP, Mathematikon …
+        \item WLAN Zugang auf dem ganzen Campus\pause
+            \begin{itemize}
+                \item eduroam
+                \item UNI-HEIDELBERG
+                \item UNI-WEBACCESS
+                \item Heidelberg4you
+            \end{itemize}\pause
+        \item VPN
+    \end{itemize}
+\end{frame}
+
+\subsection{WLAN}
+\begin{frame}{Netzzugang - WLAN - eduroam - Allgemein}
+    \begin{itemize}
+        \item Netzabdeckung Uniweit ziemlich gut (außer in Mensen)
+        \item funktioniert auch an vielen anderen Unis deutschland- und weltweit
+            {\url{https://www.eduroam.org/where}}
+        \item Manche Dienste/Programme funktionieren im eduroam in Heidelberg nicht
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Netzzugang - WLAN - eduroam - cat.eduroam.de}
+    \begin{itemize}
+        \item \url{https://cat.eduroam.de/}
+        \item Auch für abstruse Plattformen!
+    \end{itemize}
+    \begin{center}
+    \qrcode[height=130pt]{https://cat.eduroam.de/}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Netzzugang - WLAN - eduroam - manuell}
+    \begin{itemize}
+        \item \textbf{Zugangsdaten}:\\
+        \begin{description}
+            \item[SSID:] eduroam\\
+            \item[User:] \textit{UNI-ID}@uni-heidelberg.de\\
+            \item[Password:] URZ Kennwort\\\pause
+        \end{description}
+        \item weitere Angaben, die manchmal hilfreich sind:\\
+        \begin{description}
+            \item[Verschlüssellungsmethode:] WPA2 (Enterprise)\\
+            \item[EAP-Methode:] TTLS\\
+            \item[Phase2-Authentifizierung:] PAP\\
+            \item[CA-Zertifikat:] Dt. Telekom2 (vorher herunterladen)\\
+            \item[DNS:] radius.urz.uni-heidelberg.de\\
+            \item[DNS2:] radius2.urz.uni-heidelberg.de\\
+            \item[Anonymous:] anonymous@uni-heidelberg.de\pause
+        \end{description}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Netzzugang - WLAN - UNI-HEIDELBERG}
+    \begin{itemize}
+        \item es funktionieren alle Dienste
+        \item man braucht eine VPN-Verbindung um Internet zu erhalten
+        \item mit „UNI-HEIDELBERG“ verbinden, dann VPN-Client starten
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Netzzugang - WLAN - UNI-WEBACCESS}
+    \begin{itemize}
+        \item \textit{sehr} simpel
+        \item nicht sicher
+        \item extrem langsam \& instabil
+        \item mit „UNI-WEBACCESS“ verbinden, im Browser UNI-ID und Passwort eingeben
+        \item nicht für Dauereinsatz
+    \end{itemize}
+\end{frame}
+
+\subsection{Kabelgebunden}
+\begin{frame}{Netzzugang - Kabelgebunden}
+    \begin{itemize}
+        \item verschiedene Netzwerke an verschiedene Netzwerkdosen
+        \item Laptop-LAN = UNI-HEIDELBERG WLAN
+        \item Laptop-LAN in den meisten Seminarräumen
+        \item $\exists$ Dosen $\colon \nexists$ Netz
+        \item Instituts-Netze
+    \end{itemize}
+\end{frame}
+
+\subsection{VPN}
+\begin{frame}{Netzzugang - VPN}
+    \begin{itemize}
+        \item nötig um manche Uni-Seiten von außen zu erreichen \\ $\Rightarrow$ (z.B. PW Reset)
+        \item oder um sich mit „UNI-HEIDELBERG“, bzw. dem Laptop-LAN zu verbinden\pause
+        \item Zugang zu vielen wissenschaftlichen Forschungsportalen/Papern
+        \item Offiziellen VPN-Client bekommt man von {\url{https://vpn-ac.urz.uni-heidelberg.de}}\\
+            Dieser muss nur installiert werden und als Server dann
+            \textbf{vpn-ac.urz.uni-heidelberg.de} eingetragen werden.
+        \item Funktioniert mit Linux, Windows, Mac OS X, Android und iOS gleichermaßen.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Netzzugang - VPN}
+    \begin{itemize}
+        \item Es können auch native Clients verwendet werden die oft angenehmer zu nutzen sind.
+        \item Unter Linux nutzt man openconnect, was in den meisten Distributionen verfügbar ist.
+        \item Für Android und iOS gibt es ebenfalls openconnect, welches äquivalent zum Any-Connect client zu nutzen ist.\pause
+        \item weitere Infos: \url{https://www.urz.uni-heidelberg.de/de/vpn}
+    \end{itemize}
+\end{frame}
+
+\section{Drucken}
+\begin{frame}{Drucken}
+    \begin{itemize}
+        \item dezentrales Drucksystem\pause
+        \item \textbf{Anleitung:}
+            \begin{itemize}
+                \item auf \url{http://drucker.uni-hd.de} gehen und sich
+                    einloggen
+                \item Dokument (PDF, OpenOffice, Microsoft Office, JPG, GIF, PNG, TIF, BMP, TXT) hochladen
+                \item an einen Drucker/Kopierer gehen \\
+                    (Mathematikon, Theoretikum, (INF 306) und im URZ)
+                \item CampusCard reinstecken, anmelden, Druck-Symbol auswählen
+                    und dem Menü folgen
+                \item für doppelseitigen Druck auf entsprechenden Druckauftrag klicken und einstellen.
+            \end{itemize}\pause
+        \item weitere Infos und ausführliche Anleitung zum Drucken (und
+            Scannen) auf den Webseiten des URZ und über den Druckern selbst.
+        \item \textbf{Tipp:} 20 Seiten pro Woche können auch im KIP-CIP-Pool gedruckt werden
+    \end{itemize}
+\end{frame}
+
+\section{Mail}
+\begin{frame}{Mail}
+    \begin{itemize}
+        \item erreichbar unter \url{https://sogo.urz.uni-heidelberg.de}
+        \item \textbf{unbedingt} abrufen! Darüber laufen wichtige Studiumsrelevante Dinge.
+        \item Weiterleitung an externe Adresse möglich
+        \item Eigenen Mailclient einrichten: \\ \url{https://www.urz.uni-heidelberg.de/de/e-mail-und-groupware}
+        \item Kurz Infos: \\ \url{https://www.urz.uni-heidelberg.de/de/uebersicht-e-mail-server}
+    \end{itemize}
+\end{frame}
+
+\section{Software und Anleitungen}
+\begin{frame}{Software und Anleitungen}
+    \begin{itemize}
+        \item Anleitungen und Hinweise zu allen Services des URZ unter {\url{https://urz.uni-heidelberg.de}}
+        \item Software-Lizenzen (auch für Privatrechner) gibt es unter
+            {\url{www.urz.uni-heidelberg.de/de/lizenzmanagement}}
+        \item über MS Imagine Premium erhaltet ihr (unter anderem) eine Windows Lizenz umsonst\\
+            {\small\url{www.urz.uni-heidelberg.de/de/microsoft-imagine-premium}}
+    \end{itemize}
+\end{frame}
+
+\section{Universitätsbibliothek Services}
+\begin{frame}{Universitätsbibliothek Services}
+    \begin{itemize}\pause
+        \item HEIDI {(\url{http://heidi.uni-hd.de})} ist der Bücherkatalog der UBs\pause
+        \item eBooks {(\url{http://ebooks.uni-hd.de})} gibt es auch über HEIDI\pause
+        \item Springer Link angebot über HEIDI
+        \item Ausleihen geht in INF 368 im 3. Stock\pause
+        \item Buchscanner im Erdgeschoss, INF 368\pause
+    \end{itemize}
+\end{frame}
+
+\section{Verschiedenes}
+\begin{frame}{uni-heidelberg.de vs uni-hd.de}
+    \begin{itemize}
+        \item uni-hd.de war ursprünglich für verkürzte Links gedacht
+        \item viele Webseiten waren nur über diese Adresse erreichbar
+        \item Existiert eigentlich nicht mehr
+        \item es läuft jetzt alles über uni-heidelberg.de
+    \end{itemize}
+\end{frame}
+
+\section{Fachschaft}
+\begin{frame}{Studentische offene Sprechstunde (SoS)}
+    \begin{itemize}
+        \item 
+        \item viele Webseiten waren nur über diese Adresse erreichbar
+        \item Existiert eigentlich nicht mehr
+        \item es läuft jetzt alles über uni-heidelberg.de
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{ENDE}
+    \center
+    Folien alle auf \url{http://mathphys.info/vorkurs/plan}
+\end{frame}
+\end{document}
