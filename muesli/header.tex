@@ -1,0 +1,73 @@
+% !TEX root = vortrag.tex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[t, ngerman]{beamer} %compress,
+
+%% Pakete laden...
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{
+      babel,
+      bookmark,
+      booktabs,
+%      blindtext,
+      colortbl,
+%      eurosym,
+      graphicx,
+	  hyperref,
+%      libertine,
+      microtype,
+      pifont,
+      pgfpages,
+      tikz,
+%      xspace,
+  }
+
+
+%% Design festlegen...
+  \mode<presentation>{
+%      \useoutertheme[subsection=false]{smoothbars}
+      \useinnertheme{rectangles} % rectangles, circles, rounded
+      \usecolortheme[RGB={153,0,0}]{structure}
+      \definecolor{unihd}{RGB}{153,0,0}
+      \definecolor{dark}{RGB}{115,0,0}
+      \definecolor{light}{RGB}{241,229,229}
+      \usecolortheme{whale}
+		 \usecolortheme{orchid}
+%	   \usecolortheme{beaver}
+%      \setbeamercovered{transparent}
+      \beamertemplatenavigationsymbolsempty
+%      \setbeameroption{show notes on second screen}
+      \setbeamertemplate{note page}[plain]
+      \logo{\includegraphics[width=3.5cm]{fs-logo-small}}
+
+  }
+
+%% nützliche Definitionen...
+  \graphicspath{{media/}}
+
+%% Titelinformationen...
+  \title[Studienverwaltung$\mu$]{Das Müsli und das LSF\\\small oder: wer wie was wo Stundenplan}
+  \author[
+	koebi
+  ]{
+	Jakob Schnell\\{\scriptsize\url{koebi@mathphys.stura.uni-heidelberg.de}}
+  }
+%  \institute{  \includegraphics[width=5.5cm]{fs-logo-big} }
+
+  \date{\vspace*{-2em}\\ 01. Oktober 2018}
+
+  \hypersetup{
+      pdfauthor={Jakob Schnell},
+      pdftitle={Müsli-Vortrag},
+      pdfsubject={hihi},
+      pdfkeywords={1},
+      pdfpagelayout={SinglePage},
+  }
+  
+
+
+\newenvironment{rcases}{%
+  \left.\renewcommand*\lbrace.%
+  \begin{cases}}%
+{\end{cases}\right\rbrace}
