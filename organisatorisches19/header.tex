@@ -1,0 +1,73 @@
+% !TEX root = vortrag.tex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[t, ngerman]{beamer} %compress,
+
+%% Pakete laden...
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{
+      babel,
+      bookmark,
+      booktabs,
+%      blindtext,
+      colortbl,
+%      eurosym,
+      graphicx,
+	  hyperref,
+%      libertine,
+      microtype,
+      pifont,
+      pgfpages,
+        tikz,
+%      xspace,
+  }
+
+  \usepackage[]{qrcode}
+
+
+%% Design festlegen...
+  \mode<presentation>{
+%      \useoutertheme[subsection=false]{smoothbars}
+      \useinnertheme{rectangles} % rectangles, circles, rounded
+      \usecolortheme[RGB={153,0,0}]{structure}
+      \definecolor{unihd}{RGB}{153,0,0}
+      \definecolor{dark}{RGB}{115,0,0}
+      \definecolor{light}{RGB}{241,229,229}
+      \usecolortheme{whale}
+		 \usecolortheme{orchid}
+%	   \usecolortheme{beaver}
+%      \setbeamercovered{transparent}
+      \beamertemplatenavigationsymbolsempty
+%      \setbeameroption{show notes on second screen}
+      \setbeamertemplate{note page}[plain]
+      %\logo{\includegraphics[width=3.5cm]{fs-logo-small}}
+
+  }
+
+%% nützliche Definitionen...
+  \graphicspath{{media/}}
+
+    %% Titelinformationen...
+    \title[Studienverwaltung$\mu$]{Working Title}
+    \author[
+  	we
+    ]{
+  	Christian Heusel\\
+    Janina Rastetter}
+    %  \institute{  \includegraphics[width=5.5cm]{fs-logo-big} }
+
+    \date{\vspace*{-2em}\\ 30. September 2019}
+
+    \hypersetup{
+        pdfauthor={Christian Heusel, Janina Rastetter},
+        pdftitle={Working Title},
+        pdfsubject={hihi},
+        pdfkeywords={1},
+        pdfpagelayout={SinglePage},
+    }
+
+\newenvironment{rcases}{%
+  \left.\renewcommand*\lbrace.%
+  \begin{cases}}%
+{\end{cases}\right\rbrace}
