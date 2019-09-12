@@ -4,68 +4,57 @@
 \documentclass[t, ngerman, aspectratio=1610, 12pt]{beamer} %compress,
 
 %% Pakete laden...
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-  \usepackage{
-      babel,
-      bookmark,
-      booktabs,
-%      blindtext,
-      colortbl,
-%      eurosym,
-      graphicx,
-      hyperref,
-%      libertine,
-      microtype,
-      pifont,
-      pgfpages,
-        tikz,
-%      xspace,
-  }
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{
+    babel,
+    bookmark,
+    booktabs,
+    colortbl,
+    graphicx,
+    hyperref,
+    microtype,
+    pifont,
+    pgfpages,
+    tikz,
+}
 
-  \usepackage[]{qrcode}
-
+\usepackage[]{qrcode}
 
 %% Design festlegen...
-  \mode<presentation>{
-%      \useoutertheme[subsection=false]{smoothbars}
-      \useinnertheme{rectangles} % rectangles, circles, rounded
-      \usecolortheme[RGB={153,0,0}]{structure}
-\usetheme[progressbar=frametitle]{metropolis}
-      \definecolor{unihd}{RGB}{153,0,0}
-      \definecolor{dark}{RGB}{115,0,0}
-      \definecolor{light}{RGB}{241,229,229}
-      \usecolortheme{whale}
-         \usecolortheme{orchid}
-%      \usecolortheme{beaver}
-%      \setbeamercovered{transparent}
-      \beamertemplatenavigationsymbolsempty
-%      \setbeameroption{show notes on second screen}
-      \setbeamertemplate{note page}[plain]
-      %\logo{\includegraphics[width=3.5cm]{fs-logo-small}}
-
-  }
+\mode<presentation>{
+    %      \useoutertheme[subsection=false]{smoothbars}
+    \useinnertheme{rectangles} % rectangles, circles, rounded
+    \usecolortheme[RGB={153,0,0}]{structure}
+    \usetheme[progressbar=frametitle]{metropolis}
+    \beamertemplatenavigationsymbolsempty
+    \setbeamerfont{footline}{size=\bf\huge}
+    \setbeamerfont{subtitle}{size=\normalsize}
+    \setbeamertemplate{note page}[plain]
+    \setbeamertemplate{caption}{\raggedright\insertcaption\par} % captions without prefix
+    % \logo{\includegraphics[width=3.5cm]{images/MathPhysLogoMathInf.pdf}}
+}
 
 %% nützliche Definitionen...
-  \graphicspath{{media/}}
+\graphicspath{{images/}}
 
-    %% Titelinformationen...
-    \title[Studienverwaltung$\mu$]{Working Title}
-    \author[we]{
-        Christian Heusel, Janina Rastetter
-    }
-    %  \institute{  \includegraphics[width=5.5cm]{fs-logo-big} }
+%% Titelinformationen...
+\title{Serviceangebote Studium}
+\subtitle{\vspace{-0.35cm}\texttt{EDV so weit das Auge reicht}}
+\author[we]{
+    Christian Heusel, Janina Rastetter
+}
+%  \institute{  \includegraphics[width=5.5cm]{fs-logo-big} }
 
-    \date{\vspace*{-2em}\\ 30. September 2019}
+\date{30. September 2019}
 
-    \hypersetup{
-        pdfauthor={Christian Heusel, Janina Rastetter},
-        pdftitle={Working Title},
-        pdfsubject={hihi},
-        pdfkeywords={1},
-        pdfpagelayout={SinglePage},
-    }
-
+\hypersetup{
+    pdfauthor={Christian Heusel, Janina Rastetter},
+    pdftitle={Serviceangebote Studium},
+    pdfsubject={Begrüßungsvortrag für die angehenden Erstsemester der Fächer Mathematik \& Informatik an der Uni Heidelberg},
+    pdfkeywords={EDV, Vorkurs, Fachschaft, MathPhysInfo},
+    pdfpagelayout={SinglePage},
+}
 \newenvironment{rcases}{%
   \left.\renewcommand*\lbrace.%
   \begin{cases}}%
