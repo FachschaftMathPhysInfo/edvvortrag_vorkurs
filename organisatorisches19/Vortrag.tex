@@ -6,11 +6,35 @@
 \begin{document}
 
 \begin{frame}[fragile]
-    \maketitle
+    \maketitle{}
 \end{frame}
 
-\begin{frame}[fragile]{Inhalt}
-    \tableofcontents[hideallsubsections]
+\begin{frame}{Inhalt des Vortrags}
+    \begin{minipage}[t]{0.515\textwidth}
+        \tableofcontents[hideallsubsections, sections={1-5}]
+    \end{minipage}
+    \begin{minipage}[t]{0.475\textwidth}
+        \tableofcontents[hideallsubsections, sections={6-11}]
+    \end{minipage}
+\end{frame}
+
+\begin{frame}{Präambel}
+    \Large
+    \begin{center}
+        \only<1->{%
+            {\huge \DejaSans{} 😇} Es wird die Folien zum Download geben! {\huge \DejaSans{} 😇}\\[0.7em]
+        }
+        \only<1>{\includegraphics[scale=0.6]{images/xkcd_1.png}}
+        \only<2->{%
+            {\huge \DejaSans{} 😺} Stellt Fragen, im Währenden oder am Ende! {\huge \DejaSans{} 😺}\\[0.7em]
+        }
+        \only<3->{%
+            {\huge \DejaSans{} 😱} Es wird viele Informationen geben! {\huge \DejaSans{} 😱}\\[0.7em]
+        }
+        \only<4->{%
+            \includegraphics[]{images/lets_go.png}
+        }
+    \end{center}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -22,8 +46,8 @@
     \large
     \begin{itemize}
         \item{WLAN}
-        \item{VPN}
         \item{Drucken}
+        \item{VPN}
         \item{CIP-Pool}
         \item{Uni-Mail-Adresse}
     \end{itemize}
@@ -34,15 +58,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{WLAN}
-\begin{frame}{WLAN}
+\begin{frame}{Eduroam}
 \end{frame}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% VPN
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\subsection{VPN}
-\begin{frame}{VPN}
+\begin{frame}{Eduroam einrichten -- leicht gemacht}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -51,6 +70,14 @@
 
 \subsection{Drucken}
 \begin{frame}{Drucken}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% VPN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{VPN}
+\begin{frame}{VPN}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -91,20 +118,23 @@
 \subsection{LSF}
 \begin{frame}{Das LSF -- Lehre, Studium und Forschung}
 
-    \url{https://lsf.uni-heidelberg.de}
-
-    \begin{center}
-    \qrcode{https://lsf.uni-heidelberg.de}
-    \end{center}
-
-    \begin{itemize}
-        \item{Veranstaltungssuche}
-        \item{Studienbescheinigung}
-        \item{Rückmeldung}
-        \item{Bafög-Daten}
-        \item{Noten}
-        \item{Stundenplan}
-    \end{itemize}
+    \large Link: \url{https://lsf.uni-heidelberg.de} \\
+    \begin{minipage}[t]{0.515\textwidth}
+        \begin{itemize}
+            \item{Veranstaltungssuche}
+            \item{Studienbescheinigung}
+            \item{Rückmeldung}
+            \item{Bafög-Daten}
+            \item{Noten}
+            \item{Stundenplan}
+        \end{itemize}
+    \end{minipage}
+    \begin{minipage}[t]{0.475\textwidth}
+        \vspace{0.1cm}
+        \begin{center}
+            \qrcode[height=0.65\textwidth]{https://lsf.uni-heidelberg.de}
+        \end{center}
+    \end{minipage}
 \end{frame}
 
 \begin{frame}{Veranstaltungssuche}
@@ -234,22 +264,27 @@ Achtet darauf, dass das richtige Semester eingestellt ist, bevor ihr nach Verans
 \subsection{MÜSLI}
 \begin{frame}{MÜSLI - Mathematisches Übungsgruppen- und Scheinlisten-Interface}
 
-    \url{https://muesli.mathi.uni-heidelberg.de/}
+    \large Link: \url{https://muesli.mathi.uni-heidelberg.de/}
 
-    \begin{center}
-        \qrcode{https://muesli.mathi.uni-heidelberg.de/}
-    \end{center}
+    \begin{minipage}[t]{0.7\textwidth}
 
     \begin{itemize}
-        \item{Eintragung in Übungsgruppen (auf diese Weise meldet ihr euch in der Mathe i.d.R. für Veranstaltungen an)}
-        \item{Einsehen von Zettelpunkten}
-        \item{E-Mail-Adressen der Tutor*innen}
-        \item{Klausuranmeldung}
-        \item{Noten}
+    \item Eintragung in Übungsgruppen
+        \item Einsehen von Zettelpunkten
+        \item E-Mail-Adressen der Tutor*innen
+        \item Klausuranmeldung
+        \item Noten
     \end{itemize}
+    \end{minipage}
+    \begin{minipage}[t]{0.28\textwidth}
+        \vspace*{0em}
+        \begin{center}
+            \qrcode[height=0.9\textwidth]{https://muesli.mathi.uni-heidelberg.de/}
+        \end{center}
+    \end{minipage}
 \end{frame}
 
-\begin{frame}{MÜSLI - Mathematisches Übungsgruppen- und Scheinlisten-Interface}
+\begin{frame}{MÜSLI -- \normalsize Mathematisches Übungsgruppen- und Scheinlisten-Interface}
     ACHTUNG!\\
     \begin{enumerate}
         \item{Ihr müsst euch mit eurer Uni-Mail-Adresse registrieren.}
@@ -302,7 +337,7 @@ Achtet darauf, dass das richtige Semester eingestellt ist, bevor ihr nach Verans
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% UB
+% Universitätsbibliothek
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Unibibliothek}
