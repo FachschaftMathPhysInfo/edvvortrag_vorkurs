@@ -1,7 +1,7 @@
 % !TEX root = vortrag.tex
 % !TEX encoding = UTF-8 Unicode
 
-\documentclass[t, ngerman]{beamer} %compress,
+\documentclass[t, ngerman, aspectratio=1610, 12pt]{beamer} %compress,
 
 %% Pakete laden...
   \usepackage[T1]{fontenc}
@@ -14,7 +14,7 @@
       colortbl,
 %      eurosym,
       graphicx,
-	  hyperref,
+      hyperref,
 %      libertine,
       microtype,
       pifont,
@@ -31,12 +31,13 @@
 %      \useoutertheme[subsection=false]{smoothbars}
       \useinnertheme{rectangles} % rectangles, circles, rounded
       \usecolortheme[RGB={153,0,0}]{structure}
+\usetheme[progressbar=frametitle]{metropolis}
       \definecolor{unihd}{RGB}{153,0,0}
       \definecolor{dark}{RGB}{115,0,0}
       \definecolor{light}{RGB}{241,229,229}
       \usecolortheme{whale}
-		 \usecolortheme{orchid}
-%	   \usecolortheme{beaver}
+         \usecolortheme{orchid}
+%      \usecolortheme{beaver}
 %      \setbeamercovered{transparent}
       \beamertemplatenavigationsymbolsempty
 %      \setbeameroption{show notes on second screen}
@@ -50,11 +51,9 @@
 
     %% Titelinformationen...
     \title[Studienverwaltung$\mu$]{Working Title}
-    \author[
-  	we
-    ]{
-  	Christian Heusel\\
-    Janina Rastetter}
+    \author[we]{
+        Christian Heusel, Janina Rastetter
+    }
     %  \institute{  \includegraphics[width=5.5cm]{fs-logo-big} }
 
     \date{\vspace*{-2em}\\ 30. September 2019}
