@@ -118,13 +118,13 @@
 \begin{frame}{Übersicht: Verfügbare WiFi-Netze}
     \large \textbf{Welche Netze gibt es noch?}
     \normalsize
-    \begin{itemize}
+    \begin{itemize}[<+->]
+        \item \texttt{eduroam} \\
+            für den täglichen Gebrauch
         \item \texttt{UNI-HEIDELBERG} \\
             Internet nur über VPN, kaum Ports gesperrt
         \item \texttt{Heidelberg4You} \\
             Unsicher, unzuverlässig, funktioniert aber einfach so
-        \item \texttt{eduroam} \\
-            für den täglichen Gebrauch
         \item (\texttt{UNI-WEBACCESS}) \\
             Unsicher, für Tagungsgäste
     \end{itemize}
@@ -185,6 +185,20 @@
 
 \subsection{Uni-Mail-Adresse}
 \begin{frame}{Uni-Mail-Adresse}
+    \begin{itemize}
+        \item<+-> jeder Studierende bekommt vom URZ eine Mail-Adresse \\
+            \texttt{<name>@stud.uni-heidelberg.de} \\
+            \texttt{<uni-id>@stud.uni-heidelberg.de} \\
+        \item<+->diese Adresse ist Abrufbar via Web: \\
+            \url{https://sogo.urz.uni-heidelberg.de} \\
+        \item<+-> oder mit einem Mailclient (z.B. Thunderbird): \\
+            \vspace{0.5em}
+            \begin{tabular}{lll}
+                Aufgabe & Adresse & Port \\ \toprule
+                Posteingangsserver & \texttt{imap.urz.uni-heidelberg.de} & \texttt{993} \\
+                Postausgangsserver & \texttt{mail.urz.uni-heidelberg.de} & \texttt{587} \\
+            \end{tabular}
+    \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -516,54 +530,54 @@
 \end{frame}
 
 \begin{frame}{\includegraphics[scale=0.072]{images/mampf.png} MaMpf -- Registrierung}
-      \only<1>{
-            Registriert euch einfach mit einer x-beliebigen E-Mail-Adresse.\\
-            \begin{figure}
-                  \centering
-                  \includegraphics[scale=0.3]{images/mampf01.jpg}
-            \end{figure}
-      }
-      \only<2>{
-            MaMpf schickt euch an diese E-Mail-Adresse einen Aktivierungslink,
-            den ihr anklicken müsst.\\
-            \begin{figure}
-                  \centering
-                  \includegraphics[scale=0.3]{images/mampf02.jpg}
-            \end{figure}
-      }
+    \only<1>{
+        Registriert euch einfach mit einer x-beliebigen E-Mail-Adresse.\\
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.3]{images/mampf01.jpg}
+        \end{figure}
+    }
+    \only<2>{
+        MaMpf schickt euch an diese E-Mail-Adresse einen Aktivierungslink,
+        den ihr anklicken müsst.\\
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.3]{images/mampf02.jpg}
+        \end{figure}
+    }
 \end{frame}
 
 \begin{frame}{\includegraphics[scale=0.072]{images/mampf.png} MaMpf -- Profil einstellen}
-      \only<1>{
-            Und schon habt ihr ein MaMpf-Profil, das es einzurichten gilt.\\
-            Wählt die Module aus, zu denen ihr Inhalte sehen wollt.
-            \begin{figure}
-                  \centering
-                  \includegraphics[scale=0.2]{images/mampf03.jpg}
-            \end{figure}
-      }
-      \only<2>{
-            Manche Veranstaltungen gibt es mehrfach, weil sie regelmäßig stattfinden.\\
-            Wählt eine primäre Veranstaltung (vorzugsweise die, die ihr hört),
-            sonst enthält euch MaMpf Inhalte vor.\\
-            \begin{figure}
-                  \centering
-                  \includegraphics[scale=0.3]{images/mampf25.jpg}
-            \end{figure}
-            Wenn ihr eine weitere Veranstaltung abonniert, könnt ihr auch auf deren
-            Inhalte zugreifen.
-            Dort findet ihr Erklärungen anderer Dozent*innen, die euch vielleicht
-            weiterhelfen, wenn ihr etwas in eurer Vorlesung nicht versteht.
-      }
-      \only<3>{
-            MaMpf informiert euch über Neuigkeiten (z.B. Mitteilungen von Dozent*innen
-            und Obertutor*innen, Medien, Veranstaltungen, ...).\\
-            Diese Informationen könnt ihr euch zusätzlich per E-Mail zuschicken lassen.
-            \begin{figure}
-                  \centering
-                  \includegraphics[scale=0.3]{images/mampf04.jpg}
-            \end{figure}
-      }
+    \only<1>{
+        Und schon habt ihr ein MaMpf-Profil, das es einzurichten gilt.\\
+        Wählt die Module aus, zu denen ihr Inhalte sehen wollt.
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.2]{images/mampf03.jpg}
+        \end{figure}
+    }
+    \only<2>{
+        Manche Veranstaltungen gibt es mehrfach, weil sie regelmäßig stattfinden.\\
+        Wählt eine primäre Veranstaltung (vorzugsweise die, die ihr hört),
+        sonst enthält euch MaMpf Inhalte vor.\\
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.3]{images/mampf25.jpg}
+        \end{figure}
+        Wenn ihr eine weitere Veranstaltung abonniert, könnt ihr auch auf deren
+        Inhalte zugreifen.
+        Dort findet ihr Erklärungen anderer Dozent*innen, die euch vielleicht
+        weiterhelfen, wenn ihr etwas in eurer Vorlesung nicht versteht.
+    }
+    \only<3>{
+        MaMpf informiert euch über Neuigkeiten (z.B. Mitteilungen von Dozent*innen
+        und Obertutor*innen, Medien, Veranstaltungen, ...).\\
+        Diese Informationen könnt ihr euch zusätzlich per E-Mail zuschicken lassen.
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.3]{images/mampf04.jpg}
+        \end{figure}
+    }
 \end{frame}
 
 \begin{frame}{\includegraphics[scale=0.072]{images/mampf.png} MaMpf -- Tour}
@@ -726,13 +740,13 @@
       \end{figure}
 \end{frame}
 
-\begin{frame}{Die wichtigsten Websites -- Zusammenfassung}
+\begin{frame}{Übersicht: Die wichtigsten Websites}
     \large
     \begin{itemize}
-        \item LSF: allgemeine Studiumsverwaltung
-        \item MÜSLI: Studiumsverwaltung in Mathe und Info
-        \item Moodle: uniweite E-Learning-Plattform
-        \item MaMpf: E-Learning-Plattform für Mathe
+        \item \textbf{LSF:} allgemeine Studiumsverwaltung
+        \item \textbf{MÜSLI:} Studiumsverwaltung in Mathe und Info
+        \item \textbf{Moodle:} uniweite E-Learning-Plattform
+        \item \textbf{MaMpf:} E-Learning-Plattform für Mathe
     \end{itemize}
 \end{frame}
 
@@ -753,13 +767,13 @@
     \only<1>{%
         Welche Bibliotheken gibt es an der Uni?
         \begin{itemize}
-            \item Institutsbibliotheken
+            \item \textbf{Institutsbibliotheken}
                 \begin{itemize}
                     \item Fachspezifisch
                     \item Normalerweise nur Präsenzbibliotheken, d.h. keine Ausleihe möglich
                     \item Mathe-Info-Bib befindet sich im EG des Mathematikons
                 \end{itemize}
-            \item Zentralbibliotheken
+            \item \textbf{Zentralbibliotheken}
                 \begin{itemize}
                     \item  Nicht fachspezifisch
                     \item Hauptbibliothek in der Altstadt (Plöck 107-109, Ausleihe im EG)
@@ -799,37 +813,37 @@
 \end{frame}
 
 \begin{frame}{Unibiliothek -- HEIDI}
-      \only<1>{%}
-          Bibliothekskatolog HEIDI
-          \begin{itemize}
-                \item \url{https://katalog.ub.uni-heidelberg.de/cgi-bin/search.cgi?zweig=}
-                \item Medien finden und ihren Standort in Erfahrung bringen oder downloaden
-          \end{itemize}
-      }
-      \only<2>{
-            \begin{figure}
-                \centering
-                \includegraphics[scale=0.35]{images/ub01.jpg}
-            \end{figure}
-      }
-      \only<3>{
-            \begin{figure}
-                \centering
-                \includegraphics[scale=0.2]{images/ub02.jpg}
-            \end{figure}
-      }
-      \only<4>{
-            \begin{figure}
-                \centering
-                \includegraphics[scale=0.2]{images/ub03.jpg}
-            \end{figure}
-      }
-      \only<5>{
-            \begin{figure}
-                \centering
-                \includegraphics[scale=0.2]{images/ub04.jpg}
-            \end{figure}
-      }
+    \only<1>{%}
+        Bibliothekskatolog HEIDI
+        \begin{itemize}
+            \item \url{https://katalog.ub.uni-heidelberg.de/cgi-bin/search.cgi?zweig=}
+            \item Medien finden und ihren Standort in Erfahrung bringen oder downloaden
+        \end{itemize}
+    }
+    \only<2>{
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.35]{images/ub01.jpg}
+        \end{figure}
+    }
+    \only<3>{
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.2]{images/ub02.jpg}
+        \end{figure}
+    }
+    \only<4>{
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.2]{images/ub03.jpg}
+        \end{figure}
+    }
+    \only<5>{
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.2]{images/ub04.jpg}
+        \end{figure}
+    }
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
