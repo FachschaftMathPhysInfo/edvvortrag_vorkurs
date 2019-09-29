@@ -70,8 +70,8 @@
 
 \subsection{WLAN}
 \begin{frame}{Eduroam}
-    \begin{minipage}[t]{0.515\textwidth}
-        \vspace{-3em}
+    \begin{minipage}[t]{0.715\textwidth}
+        \vspace{-2em}
         \large \textbf{Was ist das Eduroam?}
         \normalsize
         \begin{itemize}
@@ -82,12 +82,12 @@
         \end{itemize}
         \only<1>{
             \begin{center}
-                \vspace{-7.5em}
-                \includegraphics[width=1.8\textwidth]{eduroam_map.png}
+                \vspace{-6.5em}
+                \includegraphics[width=1.3\textwidth]{eduroam_map.png}
             \end{center}
         }
     \end{minipage}
-    \begin{minipage}[t]{0.45\textwidth}
+    \begin{minipage}[t]{0.25\textwidth}
         \begin{flushright}
             \includegraphics[width=0.6\textwidth]{eduroam450pix.png}
         \end{flushright}
@@ -99,7 +99,7 @@
     \begin{minipage}[t]{0.515\textwidth}
         \begin{enumerate}
             \item<+-> Link aufrufen
-            \item<+-> ''Uni Heidelberg'' suchen
+            \item<+-> \glqq{}Uni Heidelberg\grqq{} suchen
             \item<+-> Tool herunterladen
             \item<+-> Tool ausführen
             \item<+-> Zugangsdaten eingeben
@@ -123,9 +123,9 @@
             für den täglichen Gebrauch
         \item \texttt{UNI-HEIDELBERG} \\
             Internet nur über VPN, kaum Ports gesperrt
-        \item \texttt{Heidelberg4You} \\
+        \item {\color{gray}(\texttt{Heidelberg4You})} \\
             Unsicher, unzuverlässig, funktioniert aber einfach so
-        \item (\texttt{UNI-WEBACCESS}) \\
+        \item {\color{gray}(\texttt{UNI-WEBACCESS})} \\
             Unsicher, für Tagungsgäste
     \end{itemize}
 \end{frame}
@@ -136,6 +136,21 @@
 
 \subsection{Drucken}
 \begin{frame}{Drucken}
+    \large \textbf{Wie drucke ich denn in der Uni?}
+    \normalsize
+    \begin{enumerate}
+        \item die zu druckende Datei im Web-Portal hochladen \\
+            {\footnotesize
+                \begin{itemize}
+                    \item \url{https://ricoh-eop.urz.uni-heidelberg.de} \\
+                    \item \url{https://www.urz.uni-heidelberg.de/de/mobiles-drucken}
+                \end{itemize}
+            }
+        \item zu einem der FollowMe-Printer laufen
+        \item Studiausweis einstecken
+        \item mit der Uni-ID anmelden
+        \item Dokumente ausdrucken
+    \end{enumerate}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -151,11 +166,20 @@
         \item Alle Daten werden für den Transport verschlüsselt
         \item hat erstmal nichts mit einem VPN Anbieter zu tun \\
               (NordVPN, TunnelBear, ExpressVPN)
-        \item bla bla bla
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Wozu nützt mir ein VPN?}
+    \large
+    \begin{itemize}
+        \item sichere Verbindung (z.B. falls man im FlixBus o.ä. ist)
+        \item man ist \glqq{}virtuell\grqq{} im Uni Netz (z.B. Passwort ändern, UB)
+        \item man ist damit auch in Deutschland \\
+            (z.B. Mediathek, (legales) Streaming)
+        \item Nutzung von WLAN/Ethernet-Dosen
+    \end{itemize}
+    Download Link: \\
+    {\normalsize \href{https://vpnsrv0.urz.uni-heidelberg.de/+CSCOE+/logon.html}{\texttt{vpnsrv0.urz.uni-heidelberg.de/+CSCOE+/logon.html}}}
 \end{frame}
 
 \begin{frame}{Wie sieht das aus?}
@@ -177,6 +201,13 @@
 
 \subsection{CIP-Pool}
 \begin{frame}{CIP-Pool}
+    \large
+    \textbf{Es gibt verschiedene CIP-Pools:}
+    \begin{itemize}
+        \item Mathematikon Bibliothek (INF 205)
+        \item Universitätsrechenzentrum (INF 293)
+        \item Kichhoff Institut für Physik (INF 227)
+    \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -189,15 +220,21 @@
         \item<+-> jeder Studierende bekommt vom URZ eine Mail-Adresse \\
             \texttt{<name>@stud.uni-heidelberg.de} \\
             \texttt{<uni-id>@stud.uni-heidelberg.de} \\
-        \item<+->diese Adresse ist Abrufbar via Web: \\
+        \item<+->diese Adresse ist abrufbar via Webinterface: \\
             \url{https://sogo.urz.uni-heidelberg.de} \\
         \item<+-> oder mit einem Mailclient (z.B. Thunderbird): \\
-            \vspace{0.5em}
-            \begin{tabular}{lll}
-                Aufgabe & Adresse & Port \\ \toprule
-                Posteingangsserver & \texttt{imap.urz.uni-heidelberg.de} & \texttt{993} \\
-                Postausgangsserver & \texttt{mail.urz.uni-heidelberg.de} & \texttt{587} \\
-            \end{tabular}
+            \only<3>{
+                \vspace{0.5em}
+                \begin{tabular}{lll}
+                    Aufgabe & Adresse & Port \\ \toprule
+                    Posteingangsserver & \texttt{imap.urz.uni-heidelberg.de} & \texttt{993} \\
+                    Postausgangsserver & \texttt{mail.urz.uni-heidelberg.de} & \texttt{587} \\
+                    \href{https://www.urz.uni-heidelberg.de/de/uebersicht-e-mail-server}{\scriptsize Link zur Quelle} & & \\
+                \end{tabular} \\
+            }
+        \item<+-> \emph{WICHTIG:} diese Mails solltet ihr lesen
+        \item<+-> Man kann die Mails auf ein privates Konto weiterleiten \\
+            SoGO: Preferences > Forward > Forward incoming messages (+ copy)
     \end{itemize}
 \end{frame}
 
@@ -244,34 +281,38 @@
 
 \begin{frame}{Veranstaltungssuche}
     \only<1>{
-          Welche Veranstaltungen ihr belegen müsst/könnt, entnehmt ihr dem Modulhandbuch zu eurem Studiengang. Mehr dazu erfahrt ihr in den PO-Vorträgen am 7. Oktober um 14:00 Uhr.\\
-          \vspace{0.5cm}
-          Achtung!\\
-          \begin{itemize}
-                \item{Nach (Pro-)Seminaren haltet ihr am besten in den Aushängen im Mathematikon oder im MÜSLI am Ende der Vorlesungszeit Ausschau (Vorbesprechungen finden teilweise in der vorletzten oder letzten Vorlesungswoche statt)}
-                \item{Über Übungsgruppen informiert ihr euch im MÜSLI}
-                \item{Für alles andere gibt es das LSF}
-          \end{itemize}
+        Welche Veranstaltungen ihr belegen müsst/könnt, entnehmt ihr dem Modulhandbuch zu eurem Studiengang. Mehr dazu erfahrt ihr in den PO-Vorträgen am 7. Oktober um 14:00 Uhr.\\
+        \vspace{0.5cm}
+        \large {\LARGE \DejaSans{} ⚠} Achtung {\LARGE \DejaSans{}⚠} \\
+        \normalsize
+        \begin{itemize}
+            \item{Nach (Pro-)Seminaren haltet ihr am besten in den Aushängen im Mathematikon oder im MÜSLI am Ende der Vorlesungszeit Ausschau (Vorbesprechungen finden teilweise in der vorletzten oder letzten Vorlesungswoche statt)}
+            \item{Über Übungsgruppen informiert ihr euch im MÜSLI}
+            \item{Für alles andere gibt es das LSF}
+        \end{itemize}
     }
     \only<2>{
-          \begin{figure}
-                \centering
-                \includegraphics[scale=0.3]{images/lsf01.jpg}
-          \end{figure}
-          Achtet darauf, dass das richtige Semester eingestellt ist, bevor ihr nach Veranstaltungen sucht.
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.3]{images/lsf01.jpg}
+        \end{figure}
+        Achtet darauf, dass das richtige Semester eingestellt ist, bevor ihr nach Veranstaltungen sucht.
     }
     \only<3>{
-          \begin{figure}
-                \centering
-                \includegraphics[scale=0.25]{images/lsf02.jpg}
-          \end{figure}
+        \begin{figure}
+            \centering
+            \includegraphics[scale=0.25]{images/lsf02.jpg}
+        \end{figure}
     }
     \only<4>{
-          Zwei Möglichkeiten, im LSF nach Veranstaltungen zu suchen
-          \begin{enumerate}
-                \item{Veranstaltungsangebot einer Fakultät durchsuchen (Was wird angeboten?)}
-                \item{Nach konkreter Veranstaltung über die Suchfunktion suchen (Wird eine bestimmte Veranstaltung angeboten? Wann und wo findet sie statt?)}
-          \end{enumerate}
+        Zwei Möglichkeiten, im LSF nach Veranstaltungen zu suchen
+        \begin{enumerate}
+            \item Veranstaltungsangebot einer Fakultät durchsuchen \\
+                \emph{Was wird angeboten?}
+            \item Nach konkreter Veranstaltung über die Suchfunktion suchen \\
+                \emph{Wird eine bestimmte Veranstaltung angeboten?} \\
+                \emph{Wann und wo findet sie statt?}
+        \end{enumerate}
     }
 \end{frame}
 
@@ -415,10 +456,6 @@
 
     Link: \url{https://elearning2.uni-heidelberg.de/}
 
-    \begin{center}
-        \qrcode{https://elearning2.uni-heidelberg.de/}
-    \end{center}
-
     \begin{itemize}
         \item Anmeldung über Uni-ID
         \item{Kurse, in die ihr euch mit einem Einschreibeschlüssel eintragen könnt; Dozent*innen geben den Einschreibeschlüssel i.d.R. in der ersten Sitzung bekannt}
@@ -514,10 +551,6 @@
 
     Link: \url{https://mampf.mathi.uni-heidelberg.de/}
 
-    \begin{center}
-        \qrcode{https://mampf.mathi.uni-heidelberg.de/}
-    \end{center}
-
     \begin{itemize}
         \item Speziell fürs Mathelernen konzipierte E-Learning-Plattform
         \item Wird hier am Mathematischen Institut betrieben und entwickelt
@@ -526,6 +559,11 @@
         \item Werdet ihr benutzen, wenn ihr die LA1 hört
         \item Mehr zu MaMpf: \url{https://mampf.blog/}
     \end{itemize}
+    \vspace{-3.7em}
+    \begin{flushright}
+        \qrcode[height=0.27\textwidth]{https://mampf.mathi.uni-heidelberg.de/}
+    \end{flushright}
+
 
 \end{frame}
 
@@ -728,18 +766,6 @@
       }
 \end{frame}
 
-\begin{frame}{\includegraphics[scale=0.072]{images/mampf.png} MaMpf -- HelpDesk}
-      \begin{itemize}
-            \item{MaMpf-Modul für Erstis, das ihr in den Profileinstellungen
-            abonnieren könnt}
-            \item{Mehr dazu erfahrt in einem anderen Vortrag}
-      \end{itemize}
-      \begin{figure}
-            \centering
-            \includegraphics[scale=0.35]{images/mampf27.jpg}
-      \end{figure}
-\end{frame}
-
 \begin{frame}{Übersicht: Die wichtigsten Websites}
     \large
     \begin{itemize}
@@ -751,11 +777,44 @@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HelpDesk Vorstellung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{HelpDesk Vorstellung}
+\begin{frame}{HelpDesk -- Hürden abbauen}
+    \only<1-3>{%
+        \large \textbf{Wofür sind wir da?}
+        \normalsize
+        \begin{itemize}
+            \item<1-> Ich habe so grundlegende inhaltliche Fragen, dass ich sie im Tutorium gar nicht stellen kann oder will
+                $\Rightarrow$ \textbf{fachlicher HelpDesk}
+            \item<2-> Ich brauche Hilfe bei der Organisation meines Studiums, will aber nicht direkt mit einem Dozenten reden
+                $\Rightarrow$ \textbf{Drumherum-HelpDesk}
+        \end{itemize}
+            \only<3->{%
+                Seminarraum Statistik, 13-16 Uhr (außer Mittwoch) \\
+                oder: per Mail an \mail{helpdesk@mathinf.uni-heidelberg.de}
+            }
+        }
+    \only<4>{%
+        \vspace{-1em}
+        \includegraphics[width=1\textwidth]{help_desk.png}
+    }
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Software/Anleitungen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Software \& Anleitungen}
 \begin{frame}{Software/Anleitungen}
+    Über das URZ kann man vergünstigt/kostenlos Software erwerben:
+    \begin{itemize}
+        \item Antivirensoftware \pause
+        \item Microsoft Office 365 Pro Plus \pause
+        \item Developement Software \pause
+        \item Windows Lizenzen \pause
+    \end{itemize}
+    \url{https://www.urz.uni-heidelberg.de/de/lizenzmanagement}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -784,12 +843,13 @@
     \only<2>{%
         Beachtet
         \begin{itemize}
-            \item {Bibliotheksangebot nutzen}
+        \item \textbf{Bibliotheksangebot nutzen}
                 \begin{itemize}
                     \item Studierendenausweis = Nutzerausweis
-                    \item{Um alle Angebote nutzen zu können, müsst ihr euren Ausweis freischalten \url{https://www.ub.uni-heidelberg.de/service/anmeldung.html}}
+                    \item Um alle Angebote nutzen zu können, müsst ihr euren Ausweis freischalten \\
+                        \href{https://www.ub.uni-heidelberg.de/service/anmeldung.html}{\texttt{www.ub.uni-heidelberg.de/service/anmeldung.html}}
                 \end{itemize}
-            \item Schließfächer
+            \item \textbf{Schließfächer}
                 \begin{itemize}
                     \item Zentralbibliotheken: Ihr braucht eine Zwei-Euro-Münze
                     \item Mathe-Info-Bib: Es gibt Schließfächer mit Zahlencodes oder Schlüsseln; Schließfachschüssel erhaltet ihr bei der Bibliotheksaufsicht gegen ein Pfand (z.B. Ausweis)
@@ -799,15 +859,16 @@
     \only<3>{%
         Was bieten euch Bibliotheken?
         \begin{itemize}
-            \item{Lernort: allein oder zusammen (Gruppenarbeitsräume reservieren: \url{https://www.ub.uni-heidelberg.de/service/gruppenarbeitsraeume.html})}
-            \item{Literatur}
+            \item{\textbf{Lernort:} allein oder zusammen (Gruppenarbeitsräume reservieren: \url{https://www.ub.uni-heidelberg.de/service/gruppenarbeitsraeume.html})}
+            \item{\textbf{Literatur}}
                   \begin{itemize}
                         \item{Finden, nutzen, ausleihen und downloaden}
                         \item{Mehr Literatur über Datenbanken finden}
                         \item{Fernleihe}
                         \item{Teilweise Zugriff auf Online-Angebot von Zeitschriften}
                   \end{itemize}
-            \item{Weitere Informationen (z.B. Führungen und Kurse) \url{https://www.ub.uni-heidelberg.de/schulung/Welcome.html}}
+            \item Weitere Informationen (z.B. Führungen und Kurse) \\
+                \href{https://www.ub.uni-heidelberg.de/schulung/Welcome.html}{\texttt{www.ub.uni-heidelberg.de/schulung/Welcome.html}}
         \end{itemize}
     }
 \end{frame}
@@ -816,7 +877,7 @@
     \only<1>{%}
         Bibliothekskatolog HEIDI
         \begin{itemize}
-            \item \url{https://katalog.ub.uni-heidelberg.de/cgi-bin/search.cgi?zweig=}
+            \item \url{https://katalog.ub.uni-heidelberg.de}
             \item Medien finden und ihren Standort in Erfahrung bringen oder downloaden
         \end{itemize}
     }
@@ -852,17 +913,19 @@
 
 \section{Fachschaftsservices}
 \begin{frame}{Fachschaftsservices}
-\end{frame}
-
-\begin{frame}{Wer will mir hier was erzählen!?}
-    \vfill
-    \begin{center}
-        {\Large Janina Rastetter} \\
-        \mail{jrastetter@mathi.uni-heidelberg.de} \\
-        \vspace{1em}
-        {\Large Christian Heusel } \\
-        \mail{chris@mathphys.stura.uni-heidelberg.de} \\
-    \end{center}
+    \begin{itemize}[<+->]
+        \item \textbf{Unsere Webseite:} \href{mathphys.info}{\texttt{mathphys.info}} \\
+            Veranstaltungshinweise, Informationen über Gremienmitglieder
+        \item \textbf{Der Kummerkasten:} \href{https://kummerkasten.mathphys.info}{\texttt{kummerkasten.mathphys.info}} \\
+            anonyme Rückmeldung an Dozenten der Vorlesungen
+        \item \textbf{Klausurenordner:} \\
+            Im Fachschaftsraum (INF 205 // 01.301) gibt es alte Klasuren
+        \item \textbf{Mailinglisten:}
+            \begin{itemize}
+                \item[--] \mail{fachschaft@mathphys.stura.uni-heidelberg.de} \\
+                \item[--] \mail{sos@mathphys.stura.uni-heidelberg.de} \\
+            \end{itemize}
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{Vielen Dank fürs Zuhören!}
