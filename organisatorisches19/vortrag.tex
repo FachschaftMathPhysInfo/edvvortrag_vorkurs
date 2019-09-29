@@ -53,7 +53,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Digitale Infrastruktur}
-\begin{frame}{Digitale Infrastruktur}
+\begin{frame}{Übersicht: Digitale Infrastruktur}
     \large
     \begin{itemize}
         \item{WLAN}
@@ -70,9 +70,64 @@
 
 \subsection{WLAN}
 \begin{frame}{Eduroam}
+    \begin{minipage}[t]{0.515\textwidth}
+        \vspace{-3em}
+        \large \textbf{Was ist das Eduroam?}
+        \normalsize
+        \begin{itemize}
+            \item<1-> große Abdeckung in Heidelberg
+            \item<2-> Zugang in vielen weiteren Ländern der Welt
+            \item<3-> Verschlüsselter Internetzugang
+            \item<4-> für den täglichen Gebrauch
+        \end{itemize}
+        \only<1>{
+            \begin{center}
+                \vspace{-7.5em}
+                \includegraphics[width=1.8\textwidth]{eduroam_map.png}
+            \end{center}
+        }
+    \end{minipage}
+    \begin{minipage}[t]{0.45\textwidth}
+        \begin{flushright}
+            \includegraphics[width=0.6\textwidth]{eduroam450pix.png}
+        \end{flushright}
+    \end{minipage}
 \end{frame}
 
 \begin{frame}{Eduroam einrichten -- leicht gemacht}
+    \large \url{https://cat.eduroam.org} \\
+    \begin{minipage}[t]{0.515\textwidth}
+        \begin{enumerate}
+            \item<+-> Link aufrufen
+            \item<+-> ''Uni Heidelberg'' suchen
+            \item<+-> Tool herunterladen
+            \item<+-> Tool ausführen
+            \item<+-> Zugangsdaten eingeben
+            \item<+-> Fertig!
+        \end{enumerate}
+    \end{minipage}
+    \begin{minipage}[t]{0.4\textwidth}
+        \vspace{0cm}
+        \begin{center}
+            \qrcode[height=0.8\textwidth, link]{https://cat.eduroam.org}
+        \end{center}
+    \end{minipage}
+\end{frame}
+
+
+\begin{frame}{Übersicht: Verfügbare WiFi-Netze}
+    \large \textbf{Welche Netze gibt es noch?}
+    \normalsize
+    \begin{itemize}
+        \item \texttt{UNI-HEIDELBERG} \\
+            Internet nur über VPN, kaum Ports gesperrt
+        \item \texttt{Heidelberg4You} \\
+            Unsicher, unzuverlässig, funktioniert aber einfach so
+        \item \texttt{eduroam} \\
+            für den täglichen Gebrauch
+        \item (\texttt{UNI-WEBACCESS}) \\
+            Unsicher, für Tagungsgäste
+    \end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
