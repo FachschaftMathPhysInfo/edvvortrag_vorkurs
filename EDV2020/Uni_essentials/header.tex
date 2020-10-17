@@ -1,0 +1,65 @@
+% !TEX root = uniessentials.tex
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[t, ngerman, aspectratio=1610, 12pt]{beamer} %compress,
+
+%% Pakete laden...
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{
+    babel,
+    bookmark,
+    booktabs,
+    colortbl,
+    graphicx,
+    microtype,
+    pifont,
+    pgfpages,
+    tikz,
+    url,
+    xcolor,
+}
+
+\usepackage{hyperref}
+\usepackage[hyperlink]{qrcode}
+
+%% Design festlegen...
+\mode<presentation>{
+    %      \useoutertheme[subsection=false]{smoothbars}
+    \useinnertheme{rectangles} % rectangles, circles, rounded
+    \usecolortheme[RGB={153,0,0}]{structure}
+    \usetheme[progressbar=frametitle]{metropolis}
+    \beamertemplatenavigationsymbolsempty
+    \setbeamerfont{footline}{size=\bf\huge}
+    \setbeamerfont{subtitle}{size=\normalsize}
+    \setbeamertemplate{note page}[plain]
+    \setbeamertemplate{caption}{\raggedright\insertcaption\par} % captions without prefix
+    % \logo{\includegraphics[width=3.5cm]{images/MathPhysLogoMathInf.pdf}}
+}
+
+%% nützliche Definitionen...
+\graphicspath{{images/}}
+\newfontfamily\DejaSans{DejaVuSans}
+\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
+
+%% Titelinformationen...
+\title{Uni Essentials}
+\subtitle{\vspace{-0.35cm}\texttt{}}
+\author[we]{
+    \href{mailto:chris@mathphys.stura.uni-heidelberg.de}{Christian Heusel}, \href{mailto:johanna@mathphys.stura.uni-heidelberg.de}{Johanna Riedel}
+}
+%  \institute{  \includegraphics[width=5.5cm]{fs-logo-big} }
+
+\date{19. Oktober 2020}
+
+\hypersetup{
+    pdfauthor={Christian Heusel, Johanna Riedel},
+    pdftitle={Uni Essentials},
+    pdfsubject={Begrüßungsvortrag für die angehenden Erstsemester der Fächer Mathematik \& Informatik an der Uni Heidelberg},
+    pdfkeywords={EDV, Vorkurs, Fachschaft, MathPhysInfo},
+    pdfpagelayout={SinglePage},
+}
+\newenvironment{rcases}{%
+  \left.\renewcommand*\lbrace.%
+  \begin{cases}}%
+{\end{cases}\right\rbrace}

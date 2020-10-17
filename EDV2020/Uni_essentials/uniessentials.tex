@@ -1,0 +1,445 @@
+%pdf-latex
+% !TeX program = xelatex
+%header nur vom MÜSLI-Vortrag geklaut
+\input{header}
+
+\begin{document}
+
+\begin{frame}[fragile]
+    \maketitle{}
+\end{frame}
+
+\begin{frame}{Inhalt des Vortrags}
+    \begin{minipage}[t]{0.515\textwidth}
+        \tableofcontents[hideallsubsections, sections={1-5}]
+    \end{minipage}
+    \begin{minipage}[t]{0.475\textwidth}
+        \tableofcontents[hideallsubsections, sections={6-11}]
+    \end{minipage}
+\end{frame}
+
+\begin{frame}{Wer will mir hier was erzählen!?}
+    \vfill
+    \begin{center}
+        {\Large Johanna Riedel} \\
+        \mail{johanna@mathphys.stura.uni-heidelberg.de} \\
+        \vspace{1em}
+        {\Large Christian Heusel } \\
+        \mail{chris@mathphys.stura.uni-heidelberg.de} \\
+    \end{center}
+\end{frame}
+
+\begin{frame}{Präambel}
+    \Large
+    \begin{center}
+        \only<1->{
+           {\huge \DejaSans{} 😇} Es wird die Folien zum Download geben! {\huge \DejaSans{} 😇}\\[0.7em]
+        }
+        \only<1>{\includegraphics[scale=0.6]{images/xkcd_1.png}}
+        \only<2->{
+        {\huge \DejaSans{}😏 } Der Vortrag wird auch hochgeladen! {\huge \DejaSans{}😏 } }
+    
+        \only<3->{
+           {\huge \DejaSans{} 😺} Stellt Fragen, im Währenden oder am Ende! {\huge \DejaSans{} 😺}\\[0.7em]
+        }
+        \only<4->{
+            \includegraphics[]{images/lets_go.png}
+        }
+    \end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Emails
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Uni-Mail-Adresse}
+\begin{frame}{Uni-Mail-Adresse}
+	\begin{itemize}
+		\item<+-> jeder Studierende bekommt vom URZ eine Mail-Adresse \\
+		\texttt{<uni-id>@stud.uni-heidelberg.de} \\
+		\item<+->diese Adresse ist abrufbar via Webinterface: \\
+		\url{https://sogo.urz.uni-heidelberg.de} \\
+		\item<+-> oder mit einem Mailclient (z.B. Thunderbird): \\
+		\only<3>{
+			\vspace{0.5em}
+			\begin{tabular}{lll}
+				Aufgabe & Adresse & Port \\ \toprule
+				Posteingangsserver & \texttt{imap.urz.uni-heidelberg.de} & \texttt{993} \\
+				Postausgangsserver & \texttt{mail.urz.uni-heidelberg.de} & \texttt{587} \\
+				\href{https://www.urz.uni-heidelberg.de/de/uebersicht-e-mail-server}{\scriptsize Link zur Quelle} & & \\
+			\end{tabular} \\
+		}
+		\item<+-> \emph{WICHTIG:} diese Mails solltet ihr lesen
+		\item<+-> Man kann die Mails auf ein privates Konto weiterleiten \\
+		SoGO: Preferences > Forward > Forward incoming messages (+ copy)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Mail Alias}
+	\begin{itemize}
+		\item<1-2> es ist möglich eine zusätzliche Mail-Adresse zu erhalten \\
+		\texttt{<name>@stud.uni-heidelberg.de}
+		\item<2> man muss ein Formular ausfüllen \\
+		\href{https://it-service.uni-heidelberg.de/anfrage/mail_alias_beantragen}{\scriptsize Link zum Formular} 
+		\end{itemize}
+		\only<3>{
+			\begin{center}
+				\vspace{-7em}
+				\includegraphics[width=1.0\textwidth]{Alias.png}
+			\end{center}
+		}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Webkonferenzen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Webkonferenzen}
+\begin{frame}{Übersicht: Webkonferenzen}
+	\Large
+	\begin{itemize}
+		\item Etikette
+		\item Verwendete Tools
+		\item Weitere sinnvolle Tools
+	\end{itemize}
+    
+\end{frame}
+
+\subsection{Etikette}
+\begin{frame}{Etikette}
+Wie verhalte ich mich richtig in Onlinevorlesungen und Tutorien?
+	\begin{itemize}
+		\item rechtzeitig beitreten
+		\item eigenes Video ausschalten, um Bandbreite zu sparen
+		\item Headset mit Mikrofon für gute Tonqualität verwenden
+		\item Mikrofon stumm schalten
+		\item Möglichkeiten der Plattformen nutzen \\
+		Hand heben, Chats, Abstimmungen, etc.
+		\item Verständnis für die Vortragenden haben
+	\end{itemize}
+\end{frame}
+
+\subsection{Verwendete Tools}
+\begin{frame}{\includegraphics[scale=0.092]{images/zoom.jpg} Zoom}
+	\url{https://zoom.us/}
+	\begin{itemize}
+		\item genutzt für Onlinevorlesungen (LA, Ana, ITE, etc.)
+		\item die Fragestunde der LA und Ana findet hier statt
+		\item es gibt einen Client, den man installieren sollte
+		\item man benötigt keinen Account
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}{\includegraphics[scale=0.42]{images/heiConf.png} heiCONF}
+	\url{https://heiconf.uni-heidelberg.de/}
+	\begin{itemize}
+		\item genutzt für Onlinevorlesungen (Programmierkurs, $\dots$)
+		\item hier finden die meisten Tutorien statt
+		\item wird im Browser verwendet
+		\item keine Anmeldung notwendig
+		\item verlangt Name und Mail-Adresse beim Beitreten
+		\item besitzt Meldefunktion
+		\item nur Mitarbeiter der Uni können einen Account erstellen
+	\end{itemize}
+	
+\end{frame}
+
+\subsection{Verwendete Tools}
+\begin{frame}{\includegraphics[scale=0.092]{images/webex.png} Cisco WebEx}
+	\url{https://www.webex.com/de/index.html}
+	\begin{itemize}
+		\item manche Vorlesungen und Tutorien verwenden WebEx
+		\item es gibt einen Client, den man bei Bedarf installieren kann
+		\item ist auch im Browser angenehm verwendbar
+		\item man benötigt keinen Account
+	\end{itemize}
+	
+\end{frame}
+
+\subsection{Discord}
+\begin{frame}{\includegraphics[scale=0.092]{images/discord.png} Discord}
+	\url{https://discord.com/}
+	\begin{itemize}
+		\item Kommunikationsplattform für Help-Desk und Zettelgruppen
+		\item wird im Vorkurs verwendet
+		\item praktisch um zusammen zu lernen oder Zeit zu verbringen
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vorlesungswebseiten
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Vorlesungswebseiten}
+\begin{frame}{Vorlesungswebseiten}
+    \begin{itemize}
+    	\item Lineare Algebra I \& Analysis I \\
+    	\url{https://www.mathi.uni-heidelberg.de/~diffgeo/LA_Ana_WS2021}
+    	\item Fun Factsaus derAnalysis und Linearen Algebra \\
+    	\url{https://www.mathi.uni-heidelberg.de/~aschilling/teaching/funfacts-WS20}
+    	\item Einführung in die Praktische Informatik\\
+    	\url{https://www.math.uni-heidelberg.de/logic/ws20/ipi_ws20.html}
+    	\item Einführung in die Technische Informatik \\
+    	\url{https://ra.ziti.uni-heidelberg.de/cag/teaching}
+    	\item Programmierkurs \\
+    	\url{https://conan.iwr.uni-heidelberg.de/teaching/ipk_ws2020/}
+    \end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wichtige Tools
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Wichtige Tools im Studium}
+\begin{frame}{Übersicht: Wichtige Tools im Studium}
+	\Large
+    \begin{itemize}
+        \item Mampf
+        \item Moodle
+        \item Müsli
+    \end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MaMpf
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{MaMpf}
+\begin{frame}{\includegraphics[scale=0.072]{images/mampf.png} MaMpf -- Mathematische Medienplattform}
+	
+	Link: \url{https://mampf.mathi.uni-heidelberg.de/}
+	
+	\begin{itemize}
+		\item Speziell fürs Mathelernen konzipierte E-Learning-Plattform
+		\item Wird hier am Mathematischen Institut betrieben und entwickelt
+		\item Viele Lernangebote (Vorlesungsvideos, Beispielsvideos, Quizzes, ...),\\
+		die getaggt und untereinander vernetzt sind
+		\item Werdet ihr benutzen, wenn ihr die LA1 und Ana1 hört
+		%\item Werdet ihr auch im Vorkurs brauchen (?)
+		\item Mehr zu MaMpf: \url{https://mampf.blog/}
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}{\includegraphics[scale=0.072]{images/mampf.png} MaMpf -- Registrierung}
+		Registriert euch einfach mit einer x-beliebigen E-Mail-Adresse.\\
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.3]{images/mampf01.jpg}
+		\end{figure}
+\end{frame}
+
+\begin{frame}{\includegraphics[scale=0.072]{images/mampf.png} MaMpf -- Tour}
+	\vspace{6em}
+	\begin{center}
+		\Large Eine Tour findet ihr im hochgeladenen Vortragsvideo!
+	\end{center}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Moodle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Moodle}
+\begin{frame}{Moodle -- uniweite E-Learningplattform}
+	
+	Link: \url{https://moodle.uni-heidelberg.de/login/index.php}
+	
+	\begin{itemize}
+		\item Anmeldung über Uni-ID
+		\item{Kurse, in die ihr euch mit einem Einschreibeschlüssel eintragen könnt; Dozent*innen geben den Einschreibeschlüssel i.d.R. in der ersten Sitzung bekannt}
+		\item{Materialien zu Veranstaltungen wie Übungsblätter oder Präsentationen}
+		\item{Abgaben}
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}{Moodle -- uniweite E-Learningplattform}
+	\only<1>{%}
+		\begin{figure}
+			\centering
+			\includegraphics[scale=0.25]{images/moodle06.png}
+		\end{figure}
+	}
+	\only<2>{%}
+		\vspace{6em}
+		\begin{center}
+		\Large Eine Tour findet ihr im hochgeladenen Vortragsvideo!
+		\end{center}
+	}
+\end{frame}
+
+\begin{frame}{Was muss ich bei Zettelabgaben beachten?}
+	\begin{itemize}
+		\item Zettel werden voraussichtlich über MaMpf (Mathe) und Moodle (Info) abgegeben
+		\item gebt die Zettel pünktlich ab $\rightarrow$ sonst eventuell keine Punkte
+		\item die genauen Abgaberegelungen werden euch rechtzeitig in eurer Vorlesung mitgeteilt
+		\item Scans oder gute Fotos eurer Antworten reichen i.d.R. aus
+		\item Code wird als Sourcefile abgegeben
+	\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MÜSLI
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{MÜSLI}
+\begin{frame}{MÜSLI -- \normalsize Mathematisches Übungsgruppen- und Scheinlisten-Interface}
+
+    \large \url{https://muesli.mathi.uni-heidelberg.de/}
+
+    \begin{minipage}[t]{0.7\textwidth}
+
+    \begin{itemize}
+        \item Eintragung in Übungsgruppen
+        \item Einsehen von Zettelpunkten
+        \item E-Mail-Adressen der Tutor*innen
+        \item Klausuranmeldung
+        \item Noten
+    \end{itemize}
+    \end{minipage}
+    \begin{minipage}[t]{0.28\textwidth}
+        \vspace*{0em}
+        \begin{center}
+            \qrcode[height=0.9\textwidth]{https://muesli.mathi.uni-heidelberg.de/}
+        \end{center}
+    \end{minipage}
+\end{frame}
+
+\begin{frame}{MÜSLI -- \normalsize Mathematisches Übungsgruppen- und Scheinlisten-Interface}
+    \Large {\LARGE \DejaSans{} ⚠} Achtung {\LARGE \DejaSans{}⚠} \\
+    \normalsize
+    \begin{enumerate}
+        \item{Ihr müsst euch mit eurer Uni-Mail-Adresse registrieren.}
+        \item{In Mathe/Info: Anmeldung für Übungsgruppe = Anmeldung für Vorlesung}
+        \item{In anderen Fächern gibt es andere Anmeldemodalitäten. Wenn ihr Kurse in einem anderen Fach belegen wollt/müsst, informiert euch frühzeitig(!) darüber, wie ihr euch in diesem Fach zu Veranstaltungen anmelden könnt.}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{MÜSLI -- \normalsize Mathematisches Übungsgruppen- und Scheinlisten-Interface}
+	 \Large {\LARGE \DejaSans{} ⚠} Achtung {\LARGE \DejaSans{}⚠} \\
+	\normalsize
+\begin{itemize}
+	\item Eure Anmeldungen in LA / Ana sind noch nicht fest
+	\item es gibt ein neues Präferenzsystem zur Übungsgruppenzuteilung
+	\item sprecht euch mit euren Freunden ab und gebt die gleichen Präferenzen an
+	\item dann: höhere Chance auf die gleichen Übungsgruppen
+	\item \textbf{aber:} keine Garantie!
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wie soll ich mir diese ganzen Links merken?
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Wie soll ich mir diese ganzen Links merken?}
+	\begin{itemize}
+		\item das musst du auch nicht
+		\item lass das doch einfach deinen Rechner erledigen
+	\end{itemize}
+	\textbf{Tipps:}
+	\begin{itemize}
+		\item speichere Webseiten, die du oft benötigst als Lesezeichen in deinem Browser
+		\item wenn du noch etwas dazu speichern musst (z.B. einen Zugangscode), leg dir eine Datei an, in der du alle wichtigen Links speicherst
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HelpDesk Vorstellung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{HelpDesk Vorstellung}
+\begin{frame}{HelpDesk -- Hürden abbauen}
+    \only<1-3>{%
+        \large \textbf{Wofür sind wir da?}
+        \normalsize
+        \begin{itemize}
+            \item<1-> Ich habe so grundlegende inhaltliche Fragen, dass ich sie im Tutorium gar nicht stellen kann oder will
+                $\Rightarrow$ \textbf{fachlicher HelpDesk}
+            \item<2-> Ich brauche Hilfe bei der Organisation meines Studiums, will aber nicht direkt mit einem Dozenten reden
+                $\Rightarrow$ \textbf{Drumherum-HelpDesk}
+        \end{itemize}
+            \only<3->{% TODO Hier aktuelle Gegebenheiten des HelpDesk einfügen
+                Seminarraum Statistik, 13-16 Uhr (außer Mittwoch) \\
+                oder: per Mail an \mail{helpdesk@mathinf.uni-heidelberg.de}
+            }
+        }
+    \only<4>{%
+        \vspace{-1em}
+        \includegraphics[width=1\textwidth]{help_desk.png}
+    }
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fachschaftsservices
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Fachschaftsservices}
+\begin{frame}{Fachschaftsservices}
+	\begin{itemize}[<+->]
+		\item \textbf{Unsere Webseite:} \href{mathphys.info}{\texttt{mathphys.info}} \\
+		Veranstaltungshinweise, Informationen über Gremienmitglieder
+		\item \textbf{Der Kummerkasten:} \href{https://kummerkasten.mathphys.info}{\texttt{kummerkasten.mathphys.info}} \\
+		anonyme Rückmeldung an Dozenten der Vorlesungen
+		\item \textbf{Klausurenordner:} \\
+		Im Fachschaftsraum (INF 205 // 01.301) gibt es alte Klausuren
+		\item \textbf{Mailinglisten:}
+		\begin{itemize}
+			\item[--] \mail{fachschaft@mathphys.stura.uni-heidelberg.de} \\
+			\item[--] \mail{sos@mathphys.stura.uni-heidelberg.de} \\
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Software/Anleitungen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Software \& Anleitungen}
+\begin{frame}{Software/Anleitungen}
+    Über das URZ kann man vergünstigt/kostenlos Software erwerben:
+    \begin{itemize}
+        \item Antivirensoftware \pause
+        \item Microsoft Office 365 Pro Plus (3,99 € / Jahr) \pause
+        \item Developement Software \pause
+        \item Windows Lizenzen \pause
+    \end{itemize}
+    \url{https://www.urz.uni-heidelberg.de/de/lizenzmanagement}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Handlungsaufforderung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Was sollte ich nochmal alles machen?}
+\begin{frame}{Was sollte ich nochmal alles machen?}
+	\textbf{Accounts anlegen}
+	\normalsize
+	\begin{itemize}
+		\item bei MaMpf
+		\item bei Müsli
+	\end{itemize}
+	\textbf{Clients installieren}
+	\normalsize
+	\begin{itemize}
+		\item Zoom
+		\item WebEx
+		\item Discord
+	\end{itemize}
+	\textbf{Und sonst?}
+	\normalsize
+	\begin{itemize}
+		\item eventuell Mail-Alias beantragen
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Vielen Dank fürs Zuhören!}
+	\vfill
+	\begin{center}
+		\Huge Fragen \\[3.5pt]
+		\normalsize Uni-Essentials
+	\end{center}
+\end{frame}
+
+
+\end{document}
